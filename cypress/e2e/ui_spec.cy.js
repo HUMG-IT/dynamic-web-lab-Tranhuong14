@@ -14,3 +14,4 @@ describe('Kiểm thử giao diện lưu tên và tính chỉ số BMI', () => {
         cy.get('#bmiResult').should('contain', 'Bình thường');
     });
 });
+  
