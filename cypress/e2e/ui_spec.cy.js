@@ -4,6 +4,8 @@ describe('Kiểm thử giao diện lưu tên và tính chỉ số BMI', () => {
         cy.get('#name').type('John');
         cy.get('button').contains('Gửi tên').click();
         cy.get('#nameResponse').should('contain', 'Xin chào, John!');
+        cy.get('#bmiResult', { timeout: 15000 }).should('contain', 'Bình thường');
+
     });
 
     it('tính và hiển thị chỉ số BMI', () => {

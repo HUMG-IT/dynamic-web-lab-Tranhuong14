@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-
 const app = express();
 const port = 3000;
 
@@ -16,3 +15,4 @@ app.listen(port, () => {
   console.log(`Server đang chạy ở cổng ${port}`);
   console.log(`Truy cập vào http://localhost:${port} để xem ứng dụng`);
 });
+module.exports = app;
